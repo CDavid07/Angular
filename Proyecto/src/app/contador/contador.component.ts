@@ -12,6 +12,8 @@ export class ContadorComponent implements OnInit {
   objeto: any
   title: string = "Hola"
   numero: number = 10;
+  base: number = 5;
+  usuarioInParent: string='User0104';
 
 
   constructor() { }
@@ -29,6 +31,16 @@ export class ContadorComponent implements OnInit {
     this.numero += valor //this hace referencia a la clase
     }
   
+    mensajeHijo:string='';
+
+  onMensajeHijo(mensaje: string) {
+      this.mensajeHijo=mensaje;
+  }
+
+  getMensaje(e: any){
+    console.log(e);
+}
+
 
 
 }
