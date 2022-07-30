@@ -7,6 +7,7 @@ import { ContadorComponent } from './contador/contador.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { FormsModule } from '@angular/forms';
 import { HijoComponent } from './contador/hijo/hijo.component';
+import { RuletaComponent } from './ruleta/ruleta.component';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     ContadorComponent,
     CalculadoraComponent,
-    HijoComponent
+    HijoComponent,
+    RuletaComponent
   ],
   imports: [
     BrowserModule,
