@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { HijoComponent } from './contador/hijo/hijo.component';
 import { RuletaComponent } from './ruleta/ruleta.component';
 import { SharedModule } from './shared/shared.module';
+import { PiccoloComponent } from './piccolo/piccolo.component';
+import { GohanComponent } from './piccolo/gohan/gohan.component';
+import { JuegosModule } from './juegos/juegos.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { SharedModule } from './shared/shared.module';
     ContadorComponent,
     CalculadoraComponent,
     HijoComponent,
-    RuletaComponent
+    RuletaComponent,
+    PiccoloComponent,
+    GohanComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    JuegosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

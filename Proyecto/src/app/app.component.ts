@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Proyecto';
+  title: string= "Interpolation";
+  Url="https://pbs.twimg.com/media/EmA-1QBXgAIIehn.jpg";
+  isDisabled: boolean= false;
+
+  name: string = "";
+  setValue(){
+    this.name = "Nancy";
+  }
+
+  
+  saludar() {
+    alert("Hola mundo")
+  }
+
 }
