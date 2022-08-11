@@ -1,0 +1,22 @@
+<div class="title">
+    <h1 class="tamt">¡Gato!</h1>
+  </div>
+  
+<div style="text-align: center">
+    <br> 
+    <button mat-raised-button (click)="presion(0,0)" class="casilla tam">{{posiciones[0][0]}}</button>
+    <button mat-raised-button (click)="presion(0,1)" class="casilla tam">{{posiciones[0][1]}}</button>
+    <button mat-raised-button (click)="presion(0,2)" class="casilla tam">{{posiciones[0][2]}}</button>
+    <br>
+    <button mat-raised-button (click)="presion(1,0)" class="casilla tam">{{posiciones[1][0]}}</button>
+    <button mat-raised-button (click)="presion(1,1)" class="casilla tam">{{posiciones[1][1]}}</button>
+    <button mat-raised-button (click)="presion(1,2)" class="casilla tam">{{posiciones[1][2]}}</button>
+    <br>
+    <button mat-raised-button (click)="presion(2,0)" class="casilla tam">{{posiciones[2][0]}}</button>
+    <button mat-raised-button (click)="presion(2,1)" class="casilla tam">{{posiciones[2][1]}}</button>
+    <button mat-raised-button (click)="presion(2,2)" class="casilla tam">{{posiciones[2][2]}}</button>
+</div>
+<br>
+<div style="text-align: center">
+    <button class="button" mat-raised-button color="primary" (click)="reiniciar()">Reiniciar</button>
+</div>

@@ -12,6 +12,8 @@ import { SharedModule } from './shared/shared.module';
 import { PiccoloComponent } from './piccolo/piccolo.component';
 import { GohanComponent } from './piccolo/gohan/gohan.component';
 import { JuegosModule } from './juegos/juegos.module';
+import { DirectivasComponent } from './directivas/directivas.component';
+import { HighlightDirective } from './directivas/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { JuegosModule } from './juegos/juegos.module';
     HijoComponent,
     RuletaComponent,
     PiccoloComponent,
-    GohanComponent
+    GohanComponent,
+    DirectivasComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

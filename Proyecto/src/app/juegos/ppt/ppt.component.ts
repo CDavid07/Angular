@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GameService } from 'src/app/services/game.service';
+import { ScoreService } from 'src/app/services/score.service';
 
 @Component({
   selector: 'app-ppt',
@@ -14,12 +15,15 @@ export class PptComponent implements OnInit {
   result: string= '';
   pointsUser = 0;
   pointsComp =  0;
+  tiempo:number = 5;
+  interval: any;
 
-  constructor(private playGame: GameService) {}
+  constructor(private playGame: GameService, private scoreGame: ScoreService) {}
 
   ngOnInit(): void {
     this.result = 'Esperando jugada...';
     console.log(this.pointsUser);
+    this.temporizador();
   }
 
   play(choice: string): void {
@@ -28,7 +32,20 @@ export class PptComponent implements OnInit {
     this.result = result.message;
     this.pointsUser += result.userAdd;
     this.pointsComp += result.compAdd;
+    this.tiempo=5;
   }
 
+  temporizador(): void {
+    this.interval = setInterval(() => {
+      this.tiempo--;
+      if(this.tiempo==0){
+        const result = this.scoreGame.lose();
+        this.result= result.message;
+        this.pointsUser += result.userAdd;
+        this.pointsComp += result.compAdd;
+        this.tiempo = 5;
+      }
+    },1000)
+  }
 
 }

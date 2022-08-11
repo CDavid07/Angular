@@ -1,0 +1,25 @@
+.title {
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+.casilla {
+  height: 100px;
+  width: 100px;
+}
+
+.tamt {
+    font-size: 60px;
+}
+
+.tam {
+    font-size: 50px;
+}
+
+.button {
+    font-size: 20px;
+    border-radius: 14px;
+}
