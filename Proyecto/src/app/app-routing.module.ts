@@ -5,6 +5,7 @@ import { ContadorComponent } from './contador/contador.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { GatoComponent } from './juegos/gato/gato.component';
 import { PptComponent } from './juegos/ppt/ppt.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { RuletaComponent } from './ruleta/ruleta.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'ppt', component: PptComponent },
   { path: 'ruleta', component: RuletaComponent },
   { path: 'directivas', component: DirectivasComponent},
-  { path: 'gato', component: GatoComponent}
+  { path: 'gato', component: GatoComponent},
+  { path: 'pipes', component: PipeComponent}
 
 ];
 

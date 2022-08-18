@@ -20,3 +20,7 @@
 <div style="text-align: center">
     <button class="button" mat-raised-button color="primary" (click)="reiniciar()">Reiniciar</button>
 </div>
+<div class="container">
+    <p [ngStyle]="{'font-size':'25px', 'text-align':'center'}" [ngClass]="(cganador==1)? 'j1' : 'j0'">Jugador O: {{jugadorO}}</p>
+    <p [ngStyle]="{'font-size':'25px', 'text-align':'center'}" [ngClass]="(cganador==2)? 'j2' : 'j0'">Jugador X: {{jugadorX}}</p>
+</div>

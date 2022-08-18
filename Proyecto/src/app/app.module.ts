@@ -14,6 +14,16 @@ import { GohanComponent } from './piccolo/gohan/gohan.component';
 import { JuegosModule } from './juegos/juegos.module';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { HighlightDirective } from './directivas/highlight.directive';
+import { PipeComponent } from './pipe/pipe.component';
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es-MX';
+import localeJa from '@angular/common/locales/ja';
+
+registerLocaleData(localeJa);
+registerLocaleData(localeEs);
+
 
 @NgModule({
   declarations: [
@@ -25,7 +35,9 @@ import { HighlightDirective } from './directivas/highlight.directive';
     PiccoloComponent,
     GohanComponent,
     DirectivasComponent,
-    HighlightDirective
+    HighlightDirective,
+    PipeComponent,
+    MayusculasPipe
   ],
   imports: [
     BrowserModule,
@@ -34,7 +46,7 @@ import { HighlightDirective } from './directivas/highlight.directive';
     SharedModule,
     JuegosModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'es-MX'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

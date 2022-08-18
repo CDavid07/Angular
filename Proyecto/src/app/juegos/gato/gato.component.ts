@@ -15,6 +15,9 @@ export class GatoComponent implements OnInit {
   ['-','-','-'],
   ['-','-','-']];
   jugador='O';
+  jugadorO=0;
+  jugadorX=0;
+  cganador=0;
 
   presion(fila:number,columna:number) {
     if (this.posiciones[fila][columna]=='-') {
@@ -39,30 +42,47 @@ export class GatoComponent implements OnInit {
   }
 
   verificarGano(ficha: string) {
-    if (this.posiciones[0][0]==ficha && this.posiciones[0][1]==ficha && this.posiciones[0][2]==ficha)
+    if (this.posiciones[0][0]==ficha && this.posiciones[0][1]==ficha && this.posiciones[0][2]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}
     
-    if (this.posiciones[1][0]==ficha && this.posiciones[1][1]==ficha && this.posiciones[1][2]==ficha)
+    if (this.posiciones[1][0]==ficha && this.posiciones[1][1]==ficha && this.posiciones[1][2]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}
     
-    if (this.posiciones[2][0]==ficha && this.posiciones[2][1]==ficha && this.posiciones[2][2]==ficha)
+    if (this.posiciones[2][0]==ficha && this.posiciones[2][1]==ficha && this.posiciones[2][2]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}
     
-    if (this.posiciones[0][0]==ficha && this.posiciones[1][0]==ficha && this.posiciones[2][0]==ficha)
+    if (this.posiciones[0][0]==ficha && this.posiciones[1][0]==ficha && this.posiciones[2][0]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}
     
-    if (this.posiciones[0][1]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][1]==ficha)
+    if (this.posiciones[0][1]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][1]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}
     
-    if (this.posiciones[0][2]==ficha && this.posiciones[1][2]==ficha && this.posiciones[2][2]==ficha)
-      alert('Ganó: '+ficha);      
-    
-    if (this.posiciones[0][0]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][2]==ficha)
+    if (this.posiciones[0][2]==ficha && this.posiciones[1][2]==ficha && this.posiciones[2][2]==ficha){
       alert('Ganó: '+ficha);
+      this.ganador(ficha)}      
     
-    if (this.posiciones[0][2]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][0]==ficha)
-      alert('Ganó: '+ficha);      
+    if (this.posiciones[0][0]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][2]==ficha){
+      alert('Ganó: '+ficha);
+      this.ganador(ficha)}
+    
+    if (this.posiciones[0][2]==ficha && this.posiciones[1][1]==ficha && this.posiciones[2][0]==ficha){
+      alert('Ganó: '+ficha);
+      this.ganador(ficha)}      
   }
 
-
+  ganador(jugador:string){
+    if(this.jugador=='O'){
+      this.jugadorO += 1;
+      this.cganador=1;
+    }
+    else{
+      this.jugadorX += 1;
+      this.cganador=2;
+    }
+  }
 }
