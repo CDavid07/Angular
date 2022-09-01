@@ -20,6 +20,9 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es-MX';
 import localeJa from '@angular/common/locales/ja';
+import { VuelaPipe } from './pipes/vuela.pipe';
+import {HttpClientModule} from '@angular/common/http';
+
 
 registerLocaleData(localeJa);
 registerLocaleData(localeEs);
@@ -37,14 +40,16 @@ registerLocaleData(localeEs);
     DirectivasComponent,
     HighlightDirective,
     PipeComponent,
-    MayusculasPipe
+    MayusculasPipe,
+    VuelaPipe
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     SharedModule,
-    JuegosModule
+    JuegosModule,
+    HttpClientModule    
   ],
   providers: [{provide: LOCALE_ID, useValue: 'es-MX'}],
   bootstrap: [AppComponent]

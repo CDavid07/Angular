@@ -7,31 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContadorComponent implements OnInit {
 
-  saludo:string = 'hola'
-  array:string[] = []
-  objeto: any
-  title: string = "Hola"
+  title: string = "Contador"
   numero: number = 10;
-  base: number = 5;
-  usuarioInParent: string='User0104';
 
+  acumular(valor: number){
+	this.numero += valor
+  }
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  pintaAlgo(): void{
-    console.log('Hola Mundo'); 
-  }
-  suma(a:number, b: number): void{
-    console.log(a+b); 
-  }
-
-  acumular(valor: number){
-    this.numero += valor //this hace referencia a la clase
-    }
-  
-    mensajeHijo:string='';
+ 
+  mensajeHijo:string='';
 
   onMensajeHijo(mensaje: string) {
       this.mensajeHijo=mensaje;
@@ -39,8 +27,16 @@ export class ContadorComponent implements OnInit {
 
   getMensaje(e: any){
     console.log(e);
-}
+  }
 
+   
+  pintaAlgo(): void{
+    console.log('Hola Mundo'); 
+  }
+  suma(a:number, b: number): void{
+    console.log(a+b); 
+  }
+ 
 
 
 }

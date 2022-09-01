@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li *ngFor="let item of menu"
+                    class="list-group-item"
+                    [routerLink]="[item.ruta]"
+                    routerLinkActive="active">
+                    {{item.texto}}
+                </li>
+           
+              </ul>
+        </div>
+ 
+    </div>
+    <div class="row " style="text-align: center">
+        <h1>¿Cuál es el mejor framework?</h1>
+        <div class="col-4">
+            <img src="../../../../assets/opciones/Angular.png"
+            alt="" width="200" height="200">
+            <br>
+            <button mat-raised-button color="primary" (click)="voto(1)">
+                Votar
+            </button>
+        </div>
+        <div class="col-4">
+            <img src="../../../../assets/opciones/React.png"
+            alt="" width="200" height="200">
+            <br>
+            <button mat-raised-button color="primary" (click)="voto(2)">
+                Votar
+            </button>
+        </div>
+        <div class="col-4">
+            <img src="../../../../assets/opciones/Vue.png"
+            alt="" width="200" height="200">
+            <br>
+            <button mat-raised-button color="primary" (click)="voto(0)">
+                Reiniciar
+            </button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
