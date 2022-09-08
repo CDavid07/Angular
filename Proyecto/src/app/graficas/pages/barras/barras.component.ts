@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
+=======
+import { Component, OnInit } from '@angular/core';
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-barras',
@@ -8,6 +12,7 @@ import { BaseChartDirective } from 'ng2-charts';
   styles: [
   ]
 })
+<<<<<<< Updated upstream
 export class BarrasComponent   {
 
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
@@ -53,5 +58,13 @@ export class BarrasComponent   {
       this.chart?.update();
     }
 
+=======
+export class BarrasComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+>>>>>>> Stashed changes
 
 }

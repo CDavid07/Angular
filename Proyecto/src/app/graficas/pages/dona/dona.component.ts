@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< Updated upstream
 import { ChartData, ChartType } from 'chart.js';
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-dona',
@@ -13,6 +16,7 @@ export class DonaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+<<<<<<< Updated upstream
   // Doughnut
   public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales', 'other' ];
   public doughnutChartData: ChartData<'doughnut'> = {
@@ -31,5 +35,7 @@ export class DonaComponent implements OnInit {
     ]
   };
   public doughnutChartType: ChartType = 'doughnut';
+=======
+>>>>>>> Stashed changes
 
 }

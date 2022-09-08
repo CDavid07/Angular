@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< Updated upstream
 import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-radar',
@@ -13,6 +16,7 @@ export class RadarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+<<<<<<< Updated upstream
   // Radar
   public radarChartOptions: ChartConfiguration['options'] = {
     responsive: true,
@@ -29,3 +33,7 @@ export class RadarComponent implements OnInit {
   public radarChartType: ChartType = 'radar';
 
 } 
+=======
+
+}
+>>>>>>> Stashed changes

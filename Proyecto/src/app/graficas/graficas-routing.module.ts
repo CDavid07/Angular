@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< Updated upstream
 import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.component';
 import { BarrasComponent } from './pages/barras/barras.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
@@ -19,6 +20,11 @@ const routes: Routes = [
 
 ];
  
+=======
+
+const routes: Routes = [];
+
+>>>>>>> Stashed changes
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

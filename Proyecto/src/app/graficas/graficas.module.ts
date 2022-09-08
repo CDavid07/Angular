@@ -7,7 +7,10 @@ import { RadarComponent } from './pages/radar/radar.component';
 import { DonaComponent } from './pages/dona/dona.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
 import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.component';
+<<<<<<< Updated upstream
 import { NgChartsModule } from 'ng2-charts';
+=======
+>>>>>>> Stashed changes
 
 
 @NgModule({
@@ -20,8 +23,14 @@ import { NgChartsModule } from 'ng2-charts';
   ],
   imports: [
     CommonModule,
+<<<<<<< Updated upstream
     GraficasRoutingModule,
     NgChartsModule
   ]
 }) 
+=======
+    GraficasRoutingModule
+  ]
+})
+>>>>>>> Stashed changes
 export class GraficasModule { }

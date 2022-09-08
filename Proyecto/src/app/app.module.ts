@@ -16,6 +16,7 @@ import { DirectivasComponent } from './directivas/directivas.component';
 import { HighlightDirective } from './directivas/highlight.directive';
 import { PipeComponent } from './pipe/pipe.component';
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import {HttpClientModule} from '@angular/common/http';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es-MX';
@@ -49,7 +50,11 @@ registerLocaleData(localeEs);
     FormsModule,
     SharedModule,
     JuegosModule,
+<<<<<<< Updated upstream
     HttpClientModule    
+=======
+    HttpClientModule
+>>>>>>> Stashed changes
   ],
   providers: [{provide: LOCALE_ID, useValue: 'es-MX'}],
   bootstrap: [AppComponent]

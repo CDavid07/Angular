@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 import { HttpClient } from '@angular/common/http';
+=======
+>>>>>>> Stashed changes
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,6 +9,7 @@ import { Injectable } from '@angular/core';
 })
 export class GraficasService {
 
+<<<<<<< Updated upstream
   constructor(private http: HttpClient) { }
  
   getUsuariosRedesSociales(){
@@ -13,3 +17,7 @@ export class GraficasService {
   }
 
 } 
+=======
+  constructor() { }
+}
+>>>>>>> Stashed changes

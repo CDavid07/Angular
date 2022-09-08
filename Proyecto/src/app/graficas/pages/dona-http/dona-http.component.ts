@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< Updated upstream
 import { ChartData, ChartType } from 'chart.js';
 import { GraficasService } from 'src/app/services/graficas.service';
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-dona-http',
@@ -10,6 +13,7 @@ import { GraficasService } from 'src/app/services/graficas.service';
 })
 export class DonaHttpComponent implements OnInit {
 
+<<<<<<< Updated upstream
   public doughnutChartData: ChartData<'doughnut'> = {  
     datasets: [
       {
@@ -35,4 +39,11 @@ export class DonaHttpComponent implements OnInit {
   }
 
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> Stashed changes
 }

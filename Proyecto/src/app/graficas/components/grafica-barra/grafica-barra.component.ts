@@ -1,13 +1,19 @@
+<<<<<<< Updated upstream
 import { Component } from '@angular/core';
 //colocar antes de @component
 interface MenuItem{
   ruta: string;
   texto: string;
 }
+=======
+import { Component, OnInit } from '@angular/core';
+
+>>>>>>> Stashed changes
 @Component({
   selector: 'app-grafica-barra',
   templateUrl: './grafica-barra.component.html',
   styles: [
+<<<<<<< Updated upstream
    `
    li{
     cursor: pointer;
@@ -29,4 +35,15 @@ export class GraficaBarraComponent {
     console.log(voto);
     
   }
+=======
+  ]
+})
+export class GraficaBarraComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> Stashed changes
 }
